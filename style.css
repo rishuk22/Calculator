@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('image.png');
+  background-color: black; /* Black background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: #1c1c1c; /* Dark gray background for the calculator */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(41, 40, 40, 0.925);
+}
+.calculator-title {
+  margin-top: 0;
+  color:rgb(139, 139, 191);
+}
+
+.display {
+  width: 95%;
+  height: 50px;
+  background-color: #f7f4f4;
+  border: none;
+  color: #1d1c1c;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.buttons, .trig-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.trig-buttons {
+  display: none; /* Initially hidden */
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+button.operator {
+  background-color: #c97d12;
+  color: #fff;
+}
+
+button.operator:hover {
+  background-color: #12cfdd;
+}
+
+button.toggle-trig {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button.toggle-trig:hover {
+  background-color: #555;
+}
